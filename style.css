@@ -1,0 +1,135 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --s-magenta: hsl(300, 69%, 71%);
+}
+
+.fw-400{font-weight: 400;}
+.fw-600{font-weight: 600;}
+
+body{
+    background: url(images/bg-mobile.svg) no-repeat top center;
+    background-color: var(--violet);
+    padding: 1.4em 1.8em;
+}
+
+.logo-top{
+    height: 1.9rem;
+    margin-top: 0.5em;
+}
+
+.mckp{
+    max-width: 100%;
+    display: block;
+    margin: 3rem 0;
+}
+
+main, footer{text-align: center;}
+
+section h1{
+    font-weight: 600;
+    font-family: "Poppins";
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2.6em;
+}
+
+section p{
+    font-weight: 400;
+    font-family: "Open Sans";
+    color: white;
+    line-height: 1.5em;
+}
+
+button{
+    background-color: white;
+    color: var(--violet);
+    border: none;
+    font-family: "Poppins";
+    font-size: 0.7rem;
+    padding: 1em 6.9em;
+    border-radius: 2.5em;
+    margin: 0.6em 0;
+    box-shadow: 1px 3px 19px 0px #2c2a2ab5;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    column-gap: 0.6em;
+    margin-block: 3.8em 1em;
+    
+    
+}
+
+footer img{
+    border: 1.5px solid black;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    padding: 0.3em;
+}
+
+/* DEKSTOP*/
+
+@media only screen and (min-width: 1000px) {
+    
+    body{
+        background: url(images/bg-desktop.svg) no-repeat top left var(--violet);
+        padding: 2em 5.5em 0 4em;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        column-gap: 3.2rem;
+       
+    }
+
+    .logo-top{
+        height: 3.4em;
+        margin-bottom: 2.3em;
+    }
+
+    .mckp{
+        margin: 3rem 0 1.3em;
+    }
+
+    section h1{
+        font-size: 2.5em;
+        margin: 2.2em 0 0.6em 0;
+    }
+
+    section p{
+        font-size: 1.1rem;
+    }
+
+    button{
+        padding: 0.7em 3.2em;
+        font-size: 1.2rem;
+    }
+
+    footer{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        column-gap: 1em;
+    }
+
+    footer img{
+        width: 1.4em;
+        height: 1.4em;
+        padding: 0.4em;
+    }
+
+    button:hover, footer img:hover{
+        cursor: pointer;
+        background-color: var(--s-magenta);
+        color: white;
+        border-color: var(--s-magenta);
+    }
+}
+
